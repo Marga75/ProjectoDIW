@@ -1,0 +1,19 @@
+.footer{
+    background-color: rgb(73, 36, 1);
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+}
+
+.selectorIdioma{
+    margin: auto;
+    display: inline-block;
+}
+
+select{
+    border: none;
+    border-radius: 5px;
+}

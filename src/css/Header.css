@@ -1,0 +1,83 @@
+.titulo{
+    background-color: rgb(73, 36, 1);
+    text-align: center;
+}
+
+h1, h2.subtitulo{
+    padding: 20px;
+    color: aliceblue;
+}
+
+h1{
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-shadow: 5px 2px black;
+    font-size: 5em;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(73, 36, 1);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.navbar-left, .navbar-center, .navbar-right{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center{
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+a:visited{
+    color: aliceblue;
+}
+
+a:hover, .dropdown button:hover{
+    color: rgb(248, 233, 200);
+    text-decoration: underline;
+}
+
+.dropdown button{
+    color: white;
+    font-size: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    top: 39px;
+    background-color: rgb(73, 36, 1);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submenu a{
+    display: block;
+    padding: 5px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.submenu a:hover{
+    background-color: rgb(248, 233, 200);
+    color: rgb(73, 36, 1);
+}
