@@ -11,6 +11,7 @@ import Volteo from "./paginas/volteo";
 import DomaVaquera from "./paginas/domaVaquera";
 import Western from "./paginas/Western";
 import Contacto from "./paginas/contacto";
+import CalculadoraExperiencia from "./paginas/CalculadoraExperiencia";
 
 function App() {
   return (
@@ -29,7 +30,10 @@ function App() {
               <Route path="/volteo" element={<Volteo />} />
               <Route path="/domaVaquera" element={<DomaVaquera />} />
               <Route path="/western" element={<Western />} />
-              <Route path="/calculadoraExperiencia" element={<Index />} />
+              <Route
+                path="/calculadoraExperiencia"
+                element={<CalculadoraExperiencia />}
+              />
               <Route path="/contacto" element={<Contacto />} />
             </Routes>
           </main>

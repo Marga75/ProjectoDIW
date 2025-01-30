@@ -60,7 +60,7 @@ a:hover, .dropdown button:hover{
 }
 
 .submenu{
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 39px;
     background-color: rgb(73, 36, 1);
