@@ -40,52 +40,54 @@ function Salto() {
         </p>
 
         <table>
-          <tr>
-            <th data-key="encabezado1">Tipo de Penalización</th>
-            <th data-key="encabezado2">Descripción</th>
-            <th data-key="encabezado3">Puntos</th>
-          </tr>
-          <tr>
-            <td data-key="contenido1">Rehúse</td>
-            <td data-key="contenido2">
-              El caballo se detiene frente al obstáculo sin saltarlo.
-            </td>
-            <td data-key="contenido3">
-              Primer rehúse: 4 puntos
-              <br />
-              Segundo rehúse: Eliminación
-            </td>
-          </tr>
-          <tr>
-            <td data-key="contenido4">Derribo</td>
-            <td data-key="contenido5">
-              Caída de cualquier parte del obstáculo al suelo.
-            </td>
-            <td data-key="contenido6">4 puntos</td>
-          </tr>
-          <tr>
-            <td data-key="contenido7">Caída del jinete</td>
-            <td data-key="contenido8">
-              Si el jinete cae durante el recorrido.
-            </td>
-            <td data-key="contenido9">Eliminación</td>
-          </tr>
-          <tr>
-            <td data-key="contenido10">Error de recorrido</td>
-            <td data-key="contenido11">
-              El jinete salta un obstáculo en el orden incorrecto.
-            </td>
-            <td data-key="contenido12">Eliminación</td>
-          </tr>
-          <tr>
-            <td data-key="contenido13">Exceso de tiempo</td>
-            <td data-key="contenido14">
-              Se supera el tiempo asignado para completar el recorrido.
-            </td>
-            <td data-key="contenido15">
-              1 punto por cada 4 segundos de exceso
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <th data-key="encabezado1">Tipo de Penalización</th>
+              <th data-key="encabezado2">Descripción</th>
+              <th data-key="encabezado3">Puntos</th>
+            </tr>
+            <tr>
+              <td data-key="contenido1">Rehúse</td>
+              <td data-key="contenido2">
+                El caballo se detiene frente al obstáculo sin saltarlo.
+              </td>
+              <td data-key="contenido3">
+                Primer rehúse: 4 puntos
+                <br />
+                Segundo rehúse: Eliminación
+              </td>
+            </tr>
+            <tr>
+              <td data-key="contenido4">Derribo</td>
+              <td data-key="contenido5">
+                Caída de cualquier parte del obstáculo al suelo.
+              </td>
+              <td data-key="contenido6">4 puntos</td>
+            </tr>
+            <tr>
+              <td data-key="contenido7">Caída del jinete</td>
+              <td data-key="contenido8">
+                Si el jinete cae durante el recorrido.
+              </td>
+              <td data-key="contenido9">Eliminación</td>
+            </tr>
+            <tr>
+              <td data-key="contenido10">Error de recorrido</td>
+              <td data-key="contenido11">
+                El jinete salta un obstáculo en el orden incorrecto.
+              </td>
+              <td data-key="contenido12">Eliminación</td>
+            </tr>
+            <tr>
+              <td data-key="contenido13">Exceso de tiempo</td>
+              <td data-key="contenido14">
+                Se supera el tiempo asignado para completar el recorrido.
+              </td>
+              <td data-key="contenido15">
+                1 punto por cada 4 segundos de exceso
+              </td>
+            </tr>
+          </tbody>
         </table>
 
         <img className="img-central" src={salto} alt="Salto" />
