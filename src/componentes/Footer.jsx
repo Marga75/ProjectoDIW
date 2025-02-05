@@ -29,25 +29,24 @@ function Footer() {
           if (!respuesta.ok) throw new Error(`HTTP error! status: ${respuesta.status}`);
   
           const datos = await respuesta.json();
-          console.log("📌 JSON obtenido:", datos);
+          
   
           if (datos[paginaActual]) {
-            console.log("✅ Traducciones para", paginaActual, ":", datos[paginaActual]);
+            
   
             Object.keys(datos[paginaActual]).forEach((clave) => {
               const elemento = document.querySelector(`[data-key="${clave}"]`);
               if (elemento) {
-                console.log(`🔄 Reemplazando texto en [data-key="${clave}"]:`, datos[paginaActual][clave]);
                 elemento.innerHTML = datos[paginaActual][clave];
               } else {
-                console.warn(`⚠️ No se encontró el elemento [data-key="${clave}"] en la página`);
+                console.warn(`No se encontró el elemento [data-key="${clave}"] en la página`);
               }
             });
           } else {
-            console.warn(`⚠️ No hay traducciones para la página '${paginaActual}' en ${idioma}.json`);
+            console.warn(`No hay traducciones para la página '${paginaActual}' en ${idioma}.json`);
           }
         } catch (error) {
-          console.error("❌ Error al cargar las traducciones:", error);
+          console.error("Error al cargar las traducciones:", error);
         }
       };
   
