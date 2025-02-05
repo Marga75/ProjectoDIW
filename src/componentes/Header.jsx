@@ -7,7 +7,7 @@ function Header() {
 
                 <div className="titulo">
                     <h1 data-key="titulo">Equitación</h1>
-                    <h2 data-key="subtitulo" className="subtitulo">Todas las disciplinas que se practican en Mallorca</h2>
+                    <h2 data-key="subtitulo1" className="subtitulo">Todas las disciplinas que se practican en Mallorca</h2>
                 </div>
 
                 <hr />
