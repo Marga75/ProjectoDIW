@@ -1,14 +1,7 @@
 import { Link } from "react-router-dom";
 import "../css/Header.css";
-import { useState } from "react";
 
 function Navbar() {
-  const [mostrarSubmenu, setMostrarSubmenu] = useState(false);
-
-  const handleClick = () => {
-    setMostrarSubmenu(!mostrarSubmenu);
-  };
-
   return (
     <>
       <nav className="navbar">
@@ -36,19 +29,9 @@ function Navbar() {
           <Link to="/western" data-key="menu6">
             Western
           </Link>
-
-          <div className="dropdown">
-            <button data-key="masMenu" onClick={handleClick}>
-              +
-            </button>
-            {mostrarSubmenu && (
-              <div className="submenu" id="submenu">
-                <Link to="/calculadoraExperiencia" data-key="menu7">
-                  Calcula tu experiencia
-                </Link>
-              </div>
-            )}
-          </div>
+          <Link to="/calculadoraExperiencia" data-key="menu7">
+            Calcula tu experiencia
+          </Link>
         </div>
         <div className="navbar-right">
           <Link to="/contacto" data-key="menu8">

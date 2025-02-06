@@ -19,6 +19,7 @@
     },
     "Salto": {
         "titulo": "Salto",
+        "subtitulo1": "",
         "menu": "Inicio",
         "menu1": "Salto",
         "menu2": "Doma",
@@ -56,6 +57,7 @@
     },
     "Doma": {
         "titulo": "Doma clásica",
+        "subtitulo1": "",
         "menu": "Inicio",
         "menu1": "Salto",
         "menu2": "Doma",
@@ -119,6 +121,7 @@
     },
     "Carreras":{
         "titulo": "Carreras",
+        "subtitulo1": "",
         "menu": "Inicio",
         "menu1": "Salto",
         "menu2": "Doma",
@@ -159,10 +162,11 @@
         "lista9": "Obstaculiza a otro corredor.",
         "lista10": "Usa la fusta más de siete veces en los últimos 500 metros.",
         "lista11": "Se detecta dopaje en el caballo.",
-        "language": "Selecciona un idioma:"
+        "lenguaje": "Selecciona un idioma:"
     },
     "Volteo": {
         "titulo": "Volteo",
+        "subtitulo1": "",
         "menu": "Inicio",
         "menu1": "Salto",
         "menu2": "Doma",
@@ -210,6 +214,7 @@
     },
     "DomaVaquera": {
         "titulo": "Doma Vaquera",
+        "subtitulo1": "",
         "menu": "Inicio",
         "menu1": "Salto",
         "menu2": "Doma",
@@ -236,6 +241,7 @@
     },
     "Western": {
         "titulo": "Western",
+        "subtitulo1": "",
         "menu": "Inicio",
         "menu1": "Salto",
         "menu2": "Doma",
@@ -270,7 +276,7 @@
     },
     "Contacto": {
         "titulo": "Equitación",
-        "subtitulo": "Todas las disciplinas que se practican en Mallorca",
+        "subtitulo1": "Todas las disciplinas que se practican en Mallorca",
         "menu": "Inicio",
         "menu1": "Salto",
         "menu2": "Doma",
@@ -289,7 +295,7 @@
     },
     "CalculadoraExperiencia":{
         "titulo": "Equitación",
-        "subtitulo": "Todas las disciplinas que se practican en Mallorca",
+        "subtitulo1": "Todas las disciplinas que se practican en Mallorca",
         "menu": "Inicio",
         "menu1": "Salto",
         "menu2": "Doma",
