@@ -19,6 +19,7 @@
     },
     "Salto":{
         "titulo": "Jumping",
+        "subtitulo1": "",
         "menu": "Home",
         "menu1": "Jumping",
         "menu2": "Dressage",
@@ -56,6 +57,7 @@
     },
     "Doma": {
         "titulo": "Classical Dressage",
+        "subtitulo1": "",
         "menu": "Home",
         "menu1": "Jumping",
         "menu2": "Dressage",
@@ -119,6 +121,7 @@
     },
     "Carreras":{
         "titulo": "Races",
+        "subtitulo1": "",
         "menu": "Home",
         "menu1": "Jumping",
         "menu2": "Dressage",
@@ -159,10 +162,11 @@
         "lista9": "He hinders another rider.",
         "lista10": "He uses the whip more than seven times in the last 500 meters.",
         "lista11": "Doping is detected in the horse.",
-        "language": "Select a language:"
+        "lenguaje": "Select a language:"
     },
     "Volteo": {
         "titulo": "Vaulting",
+        "subtitulo1": "",
         "menu": "Home",
         "menu1": "Jumping",
         "menu2": "Dressage",
@@ -210,6 +214,7 @@
     },
     "DomaVaquera": {
         "titulo": "Cowboy Dressage",
+        "subtitulo1": "",
         "menu": "Home",
         "menu1": "Jumping",
         "menu2": "Dressage",
@@ -236,6 +241,7 @@
     },
     "Western": {
         "titulo": "Western",
+        "subtitulo1": "",
         "menu": "Home",
         "menu1": "Jumping",
         "menu2": "Dressage",
@@ -270,7 +276,7 @@
     },
     "Contacto": {
         "titulo": "Riding",
-        "subtitulo": "All the disciplines practiced in Mallorca",
+        "subtitulo1": "All the disciplines practiced in Mallorca",
         "menu": "Home",
         "menu1": "Jumping",
         "menu2": "Dressage",
@@ -289,7 +295,7 @@
     },
     "CalculadoraExperiencia":{
         "titulo": "Riding",
-        "subtitulo": "All the disciplines practiced in Mallorca",
+        "subtitulo1": "All the disciplines practiced in Mallorca",
         "menu": "Home",
         "menu1": "Jumping",
         "menu2": "Dressage",

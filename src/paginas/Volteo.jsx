@@ -52,7 +52,7 @@ function Volteo() {
           </ul>
         </div>
 
-        <h3 data-key="adaptado3">Categorías y Niveles</h3>
+        <h3 data-key="apartado3">Categorías y Niveles</h3>
         <div className="lista">
           <ul>
             <li data-key="lista10">

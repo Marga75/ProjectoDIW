@@ -50,26 +50,30 @@ function Carreras() {
         </p>
 
         <table>
-          <tr>
-            <th data-key="encabezado1">Edad</th>
-            <th data-key="encabezado2">Categoría</th>
-          </tr>
-          <tr>
-            <td>12-16</td>
-            <td data-key="contenido1">MiniTrot</td>
-          </tr>
-          <tr>
-            <td>16-18</td>
-            <td data-key="contenido2">Aprendiz</td>
-          </tr>
-          <tr>
-            <td>+ 18</td>
-            <td data-key="contenido3">Amateur</td>
-          </tr>
-          <tr>
-            <td data-key="contenido4">+ 18 y haber ganado 15 carreras</td>
-            <td data-key="contenido5">Professional o Jockey</td>
-          </tr>
+          <thead>
+            <tr>
+              <th data-key="encabezado1">Edad</th>
+              <th data-key="encabezado2">Categoría</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12-16</td>
+              <td data-key="contenido1">MiniTrot</td>
+            </tr>
+            <tr>
+              <td>16-18</td>
+              <td data-key="contenido2">Aprendiz</td>
+            </tr>
+            <tr>
+              <td>+ 18</td>
+              <td data-key="contenido3">Amateur</td>
+            </tr>
+            <tr>
+              <td data-key="contenido4">+ 18 y haber ganado 15 carreras</td>
+              <td data-key="contenido5">Professional o Jockey</td>
+            </tr>
+          </tbody>
         </table>
 
         <h3 data-key="apartado1">Caracteristicas y modalidades</h3>
@@ -132,11 +136,7 @@ function Carreras() {
 
         <br />
 
-        <img
-          className="img-central"
-          src={carrerasTrotones}
-          alt="troton"
-        />
+        <img className="img-central" src={carrerasTrotones} alt="troton" />
       </div>
     </>
   );
