@@ -1,12 +1,18 @@
 import "../css/Comun.css";
 import "../css/Calculadora.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function CalculadoraExperiencia() {
   const [experiencia, setExperiencia] = useState("");
   const [frequencia, setFrequencia] = useState("");
   const [terreno, setTerreno] = useState("");
   const [resultado, setResultado] = useState("");
+  const [idioma, setIdioma] = useState("es"); // Iidoma por defecto
+
+  useEffect(() => {
+    const idiomaGuardado = localStorage.getItem("idioma") || "es";
+    setIdioma(idiomaGuardado);
+  }, []);
 
   const handleExperienciaChange = (event) => {
     setExperiencia(event.target.value);
@@ -23,20 +29,36 @@ function CalculadoraExperiencia() {
   const calcular = () => {
     let resultado = "";
 
-    if (!terreno) {
-      resultado = "Por favor, responde a todas las preguntas.";
-    } else if (experiencia === "principiante") {
-      resultado =
-        "Eres un principiante. Te recomendamos rutas fáciles y planas.";
-    } else if (experiencia === "intermedio" && frequencia === "moderada") {
-      resultado =
-        "Tienes experiencia moderada. Prueba rutas intermedias con terrenos variados.";
-    } else if (experiencia === "advanced" && terreno === "si") {
-      resultado =
-        "Eres un jinete avanzado. Explora rutas desafiantes con terreno irregular.";
+    if (idioma === "es") {
+      if (!terreno) {
+        resultado = "Por favor, responde a todas las preguntas.";
+      } else if (experiencia === "principiante") {
+        resultado =
+          "Eres un principiante. Te recomendamos rutas fáciles y planas.";
+      } else if (experiencia === "intermedio" && frequencia === "moderada") {
+        resultado =
+          "Tienes experiencia moderada. Prueba rutas intermedias con terrenos variados.";
+      } else if (experiencia === "avanzado" && terreno === "si") {
+        resultado =
+          "Eres un jinete avanzado. Explora rutas desafiantes con terreno irregular.";
+      } else {
+        resultado =
+          "Basándonos en tus respuestas, recomendamos rutas intermedias.";
+      }
     } else {
-      resultado =
-        "Basándonos en tus respuestas, recomendamos rutas intermedias.";
+      if (!terreno) {
+        resultado = "Please answer all questions.";
+      } else if (experiencia === "principiante") {
+        resultado = "You are a beginner. We recommend easy and flat routes.";
+      } else if (experiencia === "intermedio" && frequencia === "moderada") {
+        resultado =
+          "You have moderate experience. Try intermediate routes with varied terrain.";
+      } else if (experiencia === "avanzado" && terreno === "si") {
+        resultado =
+          "You are an advanced rider. Explore challenging routes with uneven terrain.";
+      } else {
+        resultado = "Based on your answers, we recommend intermediate routes.";
+      }
     }
 
     setResultado(resultado);
